@@ -1,0 +1,11 @@
+- enable haml
+- enable sass
+- port index page html
+- port index page images
+- get carousel working
+- about
+- friends
+- contact
+- wedding dresses
+- google analytics
+- seo improvements
