@@ -68,3 +68,21 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+helpers do
+  def nav_link_class name
+    css_class = name
+    css_class += ' current' if current_path.split('.').first == name
+    css_class
+  end
+
+  def nav_links
+    [
+      ['Home', 'index'],
+      ['About Nancy', 'about'],
+      ['Wedding Dresses', 'wedding-dresses'],
+      ['Contact', 'contact'], ['Press', 'press'],
+      ['Friends', 'friends']
+    ]
+  end
+end

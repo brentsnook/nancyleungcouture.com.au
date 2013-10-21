@@ -38,12 +38,8 @@
         = link_to '/index.html', :class => 'logo' do
           = image_tag 'Logo-PMS425-150x150.png', :class => 'logo'
         %nav
-          = link_to 'Home', '/index.html', :class => 'home'
-          = link_to 'About Nancy', '/about.html', :class => 'about'
-          = link_to 'Wedding Dresses', '/wedding-dresses.html', :class => 'wedding-dresses'
-          = link_to 'Contact', '/contact.html', :class => 'contact'
-          = link_to 'Press', '/press.html', :class => 'press'
-          = link_to 'Friends', '/friends.html', :class => 'friends'
+          - nav_links.each do |link|
+            = link_to link[0], "/#{link[1]}.html", :class => nav_link_class(link[1])
 
       = yield
 
