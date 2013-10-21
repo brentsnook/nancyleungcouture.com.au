@@ -1,4 +1,5 @@
-- port index page html
+- about
+- friends
 - port index page images
 - get carousel working
 - about
