@@ -1,10 +1,12 @@
-- about
-- friends
+- 404
+- set og: meta tags properly according to page
+  - title
+  - description
+  - url
+- set canonical and any other meta tags also
+- contact
 - port index page images
 - get carousel working
-- about
-- friends
-- contact
 - wedding dresses
 - google analytics
 - seo improvements
