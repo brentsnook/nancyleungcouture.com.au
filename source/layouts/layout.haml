@@ -40,8 +40,8 @@
         %nav
           - nav_links.each do |link|
             = link_to link[0], "/#{link[1]}.html", :class => nav_link_class(link[1])
-
-      = yield
+      .content{:class => current_page.data.name}
+        = yield
 
       = javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"
       :javascript
