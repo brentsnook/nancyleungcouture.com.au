@@ -1,0 +1,36 @@
+---
+title: Contact
+name: contact
+---
+
+%h1 Contact
+
+.page-body
+  = image_tag 'About.jpg', :class => 'banner'
+
+  .contact-form
+    .form
+      contact form goes here
+
+  %address{:itemscope => 'a', :itemtype => 'http://schema.org/ProfessionalService'}
+    %p
+      For an appointment to try our signature gowns or a consultation, please call
+      %a{:href => 'tel://0400025188', :itemprop => 'telephone'}
+        0400 025 188
+      or send us an email at
+      %a{:href => 'mailto:info@nancyleungcouture.com.au', :itemprop => 'email'}
+        info@nancyleungcouture.com.au
+
+    %p
+      %span{:itemprop => 'streetAddress'}
+        Red Box Studios – 53 Langridge Street
+      ,
+      %span{:itemprop => 'addressLocality'}
+        Collingwood Melbourne
+      ,
+      %span{:itemprop => 'addressRegion'}
+        Victoria
+      %span{:itemprop => 'postalCode'}
+        3066
+
+
