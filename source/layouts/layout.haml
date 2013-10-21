@@ -37,7 +37,7 @@
           = image_tag 'Logo-PMS425-150x150.png', :class => 'logo'
         %nav
           - nav_links.each do |link|
-            = link_to link[0], "/#{link[1]}.html", :class => nav_link_class(link[1])
+            = link_to link.title, link.url, :class => link.css_class(current_path)
       .content{:class => current_page.data.name}
         = yield
 
