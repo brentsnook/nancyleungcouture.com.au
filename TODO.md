@@ -1,4 +1,4 @@
-- 404
+- index pages in each of the directories
 - set og: meta tags properly according to page
   - title
   - description
@@ -10,3 +10,4 @@
 - wedding dresses
 - google analytics
 - seo improvements
+- deploy
