@@ -1,6 +1,5 @@
-- wedding dresses
-- port index page images
 - get carousel working
+- port blog posts over to press
 - google analytics
 - seo improvements
 - add actual contact form (foxyform, google docs?   )
@@ -9,6 +8,7 @@
 
 - test in IE, FF and other browsers
 
+- auto generated sitemap?
 - set og: meta tags properly according to page
   - title
   - description
