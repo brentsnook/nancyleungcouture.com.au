@@ -30,12 +30,12 @@ module DressHelpers
       "/wedding-dresses/#{@name}.html"
     end
 
-    def small_image_url
-      "wedding-dresses/#{@name}-small.jpg"
+    def small_image_url number=1
+      "/img/wedding-dresses/#{@name}/#{number}/small.jpg"
     end
 
-    def large_image_url
-      "wedding-dresses/#{@name}-large.jpg"
+    def large_image_url number=1
+      "/img/wedding-dresses/#{@name}/#{number}/large.jpg"
     end
 
     def alt

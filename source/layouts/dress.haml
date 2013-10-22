@@ -7,8 +7,12 @@
   %h1=current_dress.name
 
   .page-body
-    = link_to '/img/' + current_dress.large_image_url, :class => 'dress', :'data-rel' => "prettyPhoto[#{current_dress.name}]" do
-      = image_tag current_dress.large_image_url
+    .images
+      = link_to current_dress.large_image_url(1), :class => 'main', :'data-rel' => "prettyPhoto[#{current_dress.name}]" do
+        = image_tag current_dress.large_image_url
+
+      = link_to current_dress.large_image_url(2), '', :'data-rel' => "prettyPhoto[#{current_dress.name}]"
+      = link_to current_dress.large_image_url(3), '', :'data-rel' => "prettyPhoto[#{current_dress.name}]"
 
     .info
       .description
