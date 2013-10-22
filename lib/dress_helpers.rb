@@ -1,6 +1,9 @@
 module DressHelpers
 
   class Dress
+
+    attr_reader :name
+
     def initialize attributes
       @name = attributes[:name].downcase
     end
@@ -11,6 +14,10 @@ module DressHelpers
 
     def small_image_url
       "wedding-dresses/#{@name}-small.jpg"
+    end
+
+    def large_image_url
+      "wedding-dresses/#{@name}-large.jpg"
     end
 
     def alt
@@ -33,5 +40,9 @@ module DressHelpers
       Dress.new(:name => 'kate'),
       Dress.new(:name => 'indiana')
     ]
+  end
+
+  def current_dress
+    dresses.find {|dress| dress.name == current_page.data.name }
   end
 end

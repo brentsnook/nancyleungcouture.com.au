@@ -1,0 +1,11 @@
+- wrap_layout :layout do
+
+  %h1=current_dress.name
+
+  .page-body
+    = image_tag current_dress.large_image_url, :class => 'dress'
+
+
+    .description
+      %h2='Description'
+      = yield
