@@ -70,5 +70,7 @@ configure :build do
 end
 
 require 'lib/navigation_helpers'
+require 'lib/dress_helpers'
 
 helpers NavigationHelpers
+helpers DressHelpers

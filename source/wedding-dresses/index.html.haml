@@ -1,0 +1,9 @@
+---
+title: Wedding Dresses
+name: wedding-dresses
+---
+
+.dresses
+  - dresses.each_with_index do |dress, index|
+    = link_to dress.url, :class => "dress" do
+      = image_tag dress.small_image_url, :alt => dress.alt, :title => dress.alt

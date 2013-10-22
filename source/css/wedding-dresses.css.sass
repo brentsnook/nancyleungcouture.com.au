@@ -1,0 +1,30 @@
+@mixin fade
+  transition: opacity .5s ease-out
+  -moz-transition: opacity .5s ease-out
+  -webkit-transition: opacity .5s ease-out
+  -o-transition: opacity .5s ease-out
+
+.wedding-dresses.content
+
+  .dresses
+    background-color: black
+    @include fade
+
+    &:hover
+      .dress
+        opacity: 0.3
+
+
+    .dress
+      display: inline-block
+      width: 252px
+      opacity: 1
+      @include fade
+
+      img
+        margin: 0
+        padding: 0
+
+      &:hover
+        opacity: 1
+
