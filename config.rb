@@ -74,3 +74,7 @@ require 'lib/dress_helpers'
 
 helpers NavigationHelpers
 helpers DressHelpers
+
+ready do
+  dresses.each{|dress| dress.sitemap = sitemap }
+end

@@ -8,11 +8,11 @@
 
   .page-body
     .images
-      = link_to current_dress.large_image_url(1), :class => 'main', :'data-rel' => "prettyPhoto[#{current_dress.name}]" do
-        = image_tag current_dress.large_image_url
+      = link_to current_dress.large_images.first, :class => 'main', :'data-rel' => "prettyPhoto[#{current_dress.name}]" do
+        = image_tag current_dress.large_images.first
 
-      = link_to current_dress.large_image_url(2), '', :'data-rel' => "prettyPhoto[#{current_dress.name}]"
-      = link_to current_dress.large_image_url(3), '', :'data-rel' => "prettyPhoto[#{current_dress.name}]"
+      - current_dress.large_images[1..-1].each do |image|
+        = link_to '', image, :'data-rel' => "prettyPhoto[#{current_dress.name}]"
 
     .info
       .description

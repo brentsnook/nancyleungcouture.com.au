@@ -3,6 +3,7 @@ module DressHelpers
   class Dress
 
     attr_reader :name
+    attr_accessor :sitemap
 
     def initialize attributes
       @name = attributes[:name].downcase
@@ -30,16 +31,22 @@ module DressHelpers
       "/wedding-dresses/#{@name}.html"
     end
 
-    def small_image_url number=1
-      "/img/wedding-dresses/#{@name}/#{number}/small.jpg"
-    end
-
-    def large_image_url number=1
-      "/img/wedding-dresses/#{@name}/#{number}/large.jpg"
-    end
-
     def alt
       "#{@name} wedding dress"
+    end
+
+    def large_images
+      images.select{ |image| image.end_with? 'large.jpg' }
+    end
+
+    def small_images
+      images.select{ |image| image.end_with? 'small.jpg' }
+    end
+
+    def images
+      sitemap.resources.select do |resource|
+        resource.path.start_with? "img/wedding-dresses/#{@name}/"
+      end.collect{ |resource| "/#{resource.path}" }
     end
 
     def previous
