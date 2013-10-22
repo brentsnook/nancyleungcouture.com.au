@@ -1,9 +1,14 @@
 - wrap_layout :layout do
 
+  - content_for :head do
+    = javascript_include_tag 'vendor/jquery.prettyPhoto'
+    = stylesheet_link_tag 'vendor/prettyPhoto'
+
   %h1=current_dress.name
 
   .page-body
-    = image_tag current_dress.large_image_url, :class => 'dress'
+    = link_to '/img/' + current_dress.large_image_url, :class => 'dress', :'data-rel' => "prettyPhoto[#{current_dress.name}]" do
+      = image_tag current_dress.large_image_url
 
     .info
       .description

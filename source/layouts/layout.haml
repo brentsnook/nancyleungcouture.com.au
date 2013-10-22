@@ -24,9 +24,13 @@
     %link{:rel => 'canonical', :href => 'http://nancyleungcouture.com.au'}
 
     = javascript_include_tag "vendor/modernizr-2.6.1.min"
+    = javascript_include_tag "vendor/jquery-1.8.0.min"
+
     = stylesheet_link_tag 'all'
     = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Open+Sans:light,lightitalic,regular,regularitalic,600,600italic,bold,bolditalic,800,800italic'
     = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic|Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700'
+
+    = yield_content :head if content_for? :head
 
   %body
     /[if lt IE 7] <p class=chromeframe>You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
