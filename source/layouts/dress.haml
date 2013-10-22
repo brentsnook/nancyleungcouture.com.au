@@ -5,7 +5,11 @@
   .page-body
     = image_tag current_dress.large_image_url, :class => 'dress'
 
+    .info
+      .description
+        %h2='Description'
+        = yield
 
-    .description
-      %h2='Description'
-      = yield
+      .navigation<
+        = link_to('<', current_dress.previous.url, :rel => :previous) if current_dress.previous
+        = link_to('>', current_dress.next.url, :rel => :next) if current_dress.next

@@ -6,10 +6,28 @@ module DressHelpers
 
     def initialize attributes
       @name = attributes[:name].downcase
+      @index = attributes[:index]
+    end
+
+    ALL = [
+      'jessica',
+      'tallulah',
+      'emily',
+      'natalie',
+      'jamie-lee',
+      'kirsten',
+      'audrey',
+      'kaya',
+      'lorelei',
+      'amber',
+      'kate',
+      'indiana'
+    ].each_with_index.map do |name, index|
+      Dress.new(:name => name, :index => index)
     end
 
     def url
-      "wedding-dresses/#{@name}.html"
+      "/wedding-dresses/#{@name}.html"
     end
 
     def small_image_url
@@ -23,23 +41,19 @@ module DressHelpers
     def alt
       "#{@name} wedding dress"
     end
+
+    def previous
+      prev_index = @index - 1
+      ALL[prev_index] if prev_index >= 0
+    end
+
+    def next
+      ALL[@index + 1]
+    end
   end
 
   def dresses
-    [
-      Dress.new(:name => 'jessica'),
-      Dress.new(:name => 'tallulah'),
-      Dress.new(:name => 'emily'),
-      Dress.new(:name => 'natalie'),
-      Dress.new(:name => 'jamie-lee'),
-      Dress.new(:name => 'kirsten'),
-      Dress.new(:name => 'audrey'),
-      Dress.new(:name => 'kaya'),
-      Dress.new(:name => 'lorelei'),
-      Dress.new(:name => 'amber'),
-      Dress.new(:name => 'kate'),
-      Dress.new(:name => 'indiana')
-    ]
+    Dress::ALL
   end
 
   def current_dress

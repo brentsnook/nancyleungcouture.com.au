@@ -1,14 +1,14 @@
-@mixin fade
-  transition: opacity .5s ease-out
-  -moz-transition: opacity .5s ease-out
-  -webkit-transition: opacity .5s ease-out
-  -o-transition: opacity .5s ease-out
+@mixin fade($duration)
+  transition: opacity $duration ease-out
+  -moz-transition: opacity $duration ease-out
+  -webkit-transition: opacity $duration ease-out
+  -o-transition: opacity $duration ease-out
 
 .wedding-dresses.content
 
   .dresses
     background-color: black
-    @include fade
+    @include fade(.5s)
 
     &:hover
       .dress
@@ -18,7 +18,7 @@
       display: inline-block
       width: 252px
       opacity: 1
-      @include fade
+      @include fade(.5s)
 
       img
         margin: 0
@@ -32,12 +32,33 @@
     width: 520px
     display: inline-block
 
-  .description
+  .info
     display: inline-block
     width: 400px
     vertical-align: top
     margin-left: 30px
-    border-bottom: 1px solid #EFEFEF
 
-    h2
-      margin-top: 0
+    .description
+      border-bottom: 1px solid #EFEFEF
+
+      h2
+        margin-top: 0
+
+    .navigation
+      display: inline-block
+      margin-top: 30px
+      text-align: right
+      width: 100%
+
+      a
+        width: 32px
+        height: 32px
+        line-height: 32px
+        text-align: center
+        background-color: black
+        display: inline-block
+        @include fade(.2s)
+
+        &:hover
+          opacity: 0.2
+          @include fade(.2s)
