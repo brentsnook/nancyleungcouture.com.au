@@ -1,12 +1,13 @@
-- contact
-
-- add actual contact form (foxyform, google docs?   )
+- wedding dresses
 - port index page images
 - get carousel working
-- wedding dresses
 - google analytics
 - seo improvements
+- add actual contact form (foxyform, google docs?   )
+
 - deploy
+
+- test in IE, FF and other browsers
 
 - set og: meta tags properly according to page
   - title
