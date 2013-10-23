@@ -64,6 +64,6 @@ module DressHelpers
   end
 
   def current_dress
-    dresses.find {|dress| dress.name == current_page.data.name }
+    dresses.find {|dress| dress.name == current_page.data.dress_name }
   end
 end
