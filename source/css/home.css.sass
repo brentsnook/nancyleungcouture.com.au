@@ -1,0 +1,43 @@
+@import 'dresses'
+
+.splash
+  width: 1020px
+  height: 800px
+  display: block
+  background-image: image-url('splash/jessica.jpg')
+
+.carousel
+  width: 1020px
+  height: 383px
+  position: relative
+
+  .carousel_container
+    width: 1020px
+    height: 383px
+    overflow: hidden
+    position: relative
+
+    li
+      width: 255px
+      height: 383px
+      float: left
+      position: relative
+      margin: 0
+
+  @include dresses
+
+  .navigation
+    display: inline-block
+    text-align: right
+    position: relative
+    bottom: 32px
+    float: right
+    z-index: 999
+
+    @include dress-navigation
+
+    a.dress-nav
+      opacity: 0.5
+
+      &:hover
+        opacity: 1

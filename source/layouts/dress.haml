@@ -20,5 +20,5 @@
         = yield
 
       .navigation<
-        = link_to('<', current_dress.previous.url, :rel => :previous) if current_dress.previous
-        = link_to('>', current_dress.next.url, :rel => :next) if current_dress.next
+        = link_to('<', current_dress.previous.url, :rel => :previous, :class => 'dress-nav') if current_dress.previous
+        = link_to('>', current_dress.next.url, :rel => :next, :class => 'dress-nav') if current_dress.next

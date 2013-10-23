@@ -1,31 +1,9 @@
-@mixin fade($duration)
-  transition: opacity $duration ease-out
-  -moz-transition: opacity $duration ease-out
-  -webkit-transition: opacity $duration ease-out
-  -o-transition: opacity $duration ease-out
+@import 'dresses'
+@import 'animation'
 
 .wedding-dresses.content
 
-  .dresses
-    background-color: black
-    @include fade(.5s)
-
-    &:hover
-      .dress
-        opacity: 0.3
-
-    .dress
-      display: inline-block
-      width: 252px
-      opacity: 1
-      @include fade(.5s)
-
-      img
-        margin: 0
-        padding: 0
-
-      &:hover
-        opacity: 1
+  @include dresses
 
 .page-body
   .images
@@ -57,15 +35,7 @@
       text-align: right
       width: 100%
 
-      a
-        width: 32px
-        height: 32px
-        line-height: 32px
-        text-align: center
-        background-color: black
-        display: inline-block
-        @include fade(.2s)
+      @include dress-navigation
 
-        &:hover
-          opacity: 0.2
-          @include fade(.2s)
+      a.dress-nav:hover
+        opacity: 0.2
