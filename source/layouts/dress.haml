@@ -3,16 +3,16 @@
   - content_for :head do
     = javascript_include_tag 'vendor/jquery.prettyPhoto'
     = stylesheet_link_tag 'vendor/prettyPhoto'
+    = javascript_include_tag 'vendor/jquery.slides.min'
+    = javascript_include_tag 'dress.jquery.slides.init'
 
   %h1=current_dress.name
 
   .page-body
-    .images
-      = link_to current_dress.large_images.first, :class => 'main', :'data-rel' => "prettyPhoto[#{current_dress.name}]" do
-        = image_tag current_dress.large_images.first
-
-      - current_dress.large_images[1..-1].each do |image|
-        = link_to '', image, :'data-rel' => "prettyPhoto[#{current_dress.name}]"
+    #slides
+      - current_dress.large_images.each do |image|
+        = link_to image, :'data-rel' => "prettyPhoto[#{current_dress.name}]" do
+          = image_tag image
 
     .info
       .description
