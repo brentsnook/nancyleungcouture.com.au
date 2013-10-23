@@ -1,6 +1,6 @@
 $(function() {
   $(document).ready(function() {
-    $('#slides').slidesjs({
+    $('.images').slidesjs({
 
       width: 520,
       height: 780,
