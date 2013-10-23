@@ -91,9 +91,11 @@ page '/feed.xml', :layout => false
 
 require 'lib/navigation_helpers'
 require 'lib/dress_helpers'
+require 'lib/home_helpers'
 
 helpers NavigationHelpers
 helpers DressHelpers
+helpers HomeHelpers
 
 ready do
   dresses.each{|dress| dress.sitemap = sitemap }

@@ -1,8 +1,13 @@
 - content_for :head do
   = javascript_include_tag 'vendor/jquery.easing.1.3'
   = javascript_include_tag 'vendor/jquery.elegantcarousel.min'
+  = javascript_include_tag 'vendor/jquery.slides.min'
+  = javascript_include_tag 'home.jquery.slides.init'
 
-.splash
+#slides.hero
+  - hero_images.each do |image|
+    = link_to image do
+      = image_tag image
 
 .carousel
   .carousel_container.dresses
