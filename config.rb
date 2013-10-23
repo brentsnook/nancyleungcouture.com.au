@@ -25,6 +25,18 @@ end
 
 activate :directory_indexes
 
+configure :development do
+  activate :google_analytics do |ga|
+    ga.tracking_id = 'UA-00000000-0'
+  end
+end
+
+configure :build do
+  activate :google_analytics do |ga|
+    ga.tracking_id = 'UA-39156490-1'
+  end
+end
+
 page '/feed.xml', :layout => false
 
 require 'lib/navigation_helpers'
