@@ -69,6 +69,26 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
+activate :blog do |blog|
+  blog.prefix = 'press'
+  blog.permalink = ':year/:month/:day/:title.html'
+  blog.sources = ':year-:month-:day-:title.html'
+  blog.taglink = 'tags/:tag.html'
+  # blog.layout = 'blog'
+  blog.default_extension = ".markdown"
+
+  blog.tag_template = "tag.html"
+  blog.calendar_template = "calendar.html"
+
+  blog.paginate = true
+  blog.per_page = 10
+  blog.page_link = "page/:num"
+end
+
+activate :directory_indexes
+
+page '/feed.xml', :layout => false
+
 require 'lib/navigation_helpers'
 require 'lib/dress_helpers'
 
