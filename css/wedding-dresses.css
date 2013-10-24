@@ -1,0 +1,76 @@
+/* line 4, /Users/brent/Projects/nancyleungcouture.com.au/source/css/dresses.css.sass */
+.wedding-dresses.content .dresses {
+  background-color: black;
+  transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+  -webkit-transition: opacity 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out; }
+  /* line 9, /Users/brent/Projects/nancyleungcouture.com.au/source/css/dresses.css.sass */
+  .wedding-dresses.content .dresses:hover .dress {
+    opacity: 0.3; }
+  /* line 12, /Users/brent/Projects/nancyleungcouture.com.au/source/css/dresses.css.sass */
+  .wedding-dresses.content .dresses .dress {
+    display: inline-block;
+    width: 252px;
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+    -moz-transition: opacity 0.5s ease-out;
+    -webkit-transition: opacity 0.5s ease-out;
+    -o-transition: opacity 0.5s ease-out; }
+    /* line 18, /Users/brent/Projects/nancyleungcouture.com.au/source/css/dresses.css.sass */
+    .wedding-dresses.content .dresses .dress img {
+      margin: 0;
+      padding: 0; }
+    /* line 22, /Users/brent/Projects/nancyleungcouture.com.au/source/css/dresses.css.sass */
+    .wedding-dresses.content .dresses .dress:hover {
+      opacity: 1; }
+
+/* line 10, /Users/brent/Projects/nancyleungcouture.com.au/source/css/wedding-dresses.css.sass */
+.page-body .images {
+  display: inline-block;
+  width: 520px; }
+  /* line 14, /Users/brent/Projects/nancyleungcouture.com.au/source/css/wedding-dresses.css.sass */
+  .page-body .images a {
+    display: none; }
+    /* line 16, /Users/brent/Projects/nancyleungcouture.com.au/source/css/wedding-dresses.css.sass */
+    .page-body .images a img {
+      width: 520px; }
+/* line 19, /Users/brent/Projects/nancyleungcouture.com.au/source/css/wedding-dresses.css.sass */
+.page-body .info {
+  display: inline-block;
+  width: 400px;
+  vertical-align: top;
+  margin-left: 30px; }
+  /* line 25, /Users/brent/Projects/nancyleungcouture.com.au/source/css/wedding-dresses.css.sass */
+  .page-body .info .description {
+    border-bottom: 1px solid #efefef; }
+    /* line 28, /Users/brent/Projects/nancyleungcouture.com.au/source/css/wedding-dresses.css.sass */
+    .page-body .info .description h2 {
+      margin-top: 0; }
+  /* line 31, /Users/brent/Projects/nancyleungcouture.com.au/source/css/wedding-dresses.css.sass */
+  .page-body .info .navigation {
+    display: inline-block;
+    margin-top: 30px;
+    text-align: right;
+    width: 100%; }
+    /* line 26, /Users/brent/Projects/nancyleungcouture.com.au/source/css/dresses.css.sass */
+    .page-body .info .navigation a.dress-nav {
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      background-color: black;
+      display: inline-block;
+      transition: opacity 0.2s ease-out;
+      -moz-transition: opacity 0.2s ease-out;
+      -webkit-transition: opacity 0.2s ease-out;
+      -o-transition: opacity 0.2s ease-out; }
+      /* line 35, /Users/brent/Projects/nancyleungcouture.com.au/source/css/dresses.css.sass */
+      .page-body .info .navigation a.dress-nav:hover {
+        transition: opacity 0.2s ease-out;
+        -moz-transition: opacity 0.2s ease-out;
+        -webkit-transition: opacity 0.2s ease-out;
+        -o-transition: opacity 0.2s ease-out; }
+    /* line 39, /Users/brent/Projects/nancyleungcouture.com.au/source/css/wedding-dresses.css.sass */
+    .page-body .info .navigation a.dress-nav:hover {
+      opacity: 0.2; }

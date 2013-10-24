@@ -1,0 +1,26 @@
+/* line 1, /Users/brent/Projects/nancyleungcouture.com.au/source/css/header.css.sass */
+#container {
+  width: 1020px;
+  background-color: white;
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 30px; }
+  /* line 8, /Users/brent/Projects/nancyleungcouture.com.au/source/css/header.css.sass */
+  #container header {
+    height: 150px; }
+    /* line 11, /Users/brent/Projects/nancyleungcouture.com.au/source/css/header.css.sass */
+    #container header .logo {
+      float: left; }
+    /* line 14, /Users/brent/Projects/nancyleungcouture.com.au/source/css/header.css.sass */
+    #container header nav {
+      float: right;
+      margin-right: 30px;
+      line-height: 150px; }
+      /* line 19, /Users/brent/Projects/nancyleungcouture.com.au/source/css/header.css.sass */
+      #container header nav a {
+        margin-left: 26px;
+        font-size: 12px;
+        font-weight: 600; }
+        /* line 24, /Users/brent/Projects/nancyleungcouture.com.au/source/css/header.css.sass */
+        #container header nav a.current {
+          color: #444444; }

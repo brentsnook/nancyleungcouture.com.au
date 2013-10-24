@@ -1,0 +1,17 @@
+/* line 2, /Users/brent/Projects/nancyleungcouture.com.au/source/css/contact.css.sass */
+.contact.content .banner {
+  width: 960px;
+  height: 440px;
+  display: block;
+  margin: 0 auto 30px 0; }
+/* line 8, /Users/brent/Projects/nancyleungcouture.com.au/source/css/contact.css.sass */
+.contact.content address {
+  width: 48%;
+  font-style: normal;
+  display: inline-block;
+  vertical-align: top; }
+/* line 14, /Users/brent/Projects/nancyleungcouture.com.au/source/css/contact.css.sass */
+.contact.content .contact-form {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top; }

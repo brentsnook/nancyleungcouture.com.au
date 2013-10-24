@@ -1,0 +1,85 @@
+/* line 3, /Users/brent/Projects/nancyleungcouture.com.au/source/css/home.css.sass */
+.hero {
+  width: 1020px;
+  height: 800px;
+  display: block; }
+  /* line 8, /Users/brent/Projects/nancyleungcouture.com.au/source/css/home.css.sass */
+  .hero img {
+    width: 1020px; }
+
+/* line 11, /Users/brent/Projects/nancyleungcouture.com.au/source/css/home.css.sass */
+.carousel {
+  width: 1020px;
+  height: 383px;
+  position: relative; }
+  /* line 16, /Users/brent/Projects/nancyleungcouture.com.au/source/css/home.css.sass */
+  .carousel .carousel_container {
+    width: 1020px;
+    height: 383px;
+    overflow: hidden;
+    position: relative; }
+    /* line 22, /Users/brent/Projects/nancyleungcouture.com.au/source/css/home.css.sass */
+    .carousel .carousel_container li {
+      width: 255px;
+      height: 383px;
+      float: left;
+      position: relative;
+      margin: 0; }
+  /* line 4, /Users/brent/Projects/nancyleungcouture.com.au/source/css/dresses.css.sass */
+  .carousel .dresses {
+    background-color: black;
+    transition: opacity 0.5s ease-out;
+    -moz-transition: opacity 0.5s ease-out;
+    -webkit-transition: opacity 0.5s ease-out;
+    -o-transition: opacity 0.5s ease-out; }
+    /* line 9, /Users/brent/Projects/nancyleungcouture.com.au/source/css/dresses.css.sass */
+    .carousel .dresses:hover .dress {
+      opacity: 0.3; }
+    /* line 12, /Users/brent/Projects/nancyleungcouture.com.au/source/css/dresses.css.sass */
+    .carousel .dresses .dress {
+      display: inline-block;
+      width: 252px;
+      opacity: 1;
+      transition: opacity 0.5s ease-out;
+      -moz-transition: opacity 0.5s ease-out;
+      -webkit-transition: opacity 0.5s ease-out;
+      -o-transition: opacity 0.5s ease-out; }
+      /* line 18, /Users/brent/Projects/nancyleungcouture.com.au/source/css/dresses.css.sass */
+      .carousel .dresses .dress img {
+        margin: 0;
+        padding: 0; }
+      /* line 22, /Users/brent/Projects/nancyleungcouture.com.au/source/css/dresses.css.sass */
+      .carousel .dresses .dress:hover {
+        opacity: 1; }
+  /* line 31, /Users/brent/Projects/nancyleungcouture.com.au/source/css/home.css.sass */
+  .carousel .navigation {
+    display: inline-block;
+    text-align: right;
+    position: relative;
+    bottom: 32px;
+    float: right;
+    z-index: 999; }
+    /* line 26, /Users/brent/Projects/nancyleungcouture.com.au/source/css/dresses.css.sass */
+    .carousel .navigation a.dress-nav {
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      background-color: black;
+      display: inline-block;
+      transition: opacity 0.2s ease-out;
+      -moz-transition: opacity 0.2s ease-out;
+      -webkit-transition: opacity 0.2s ease-out;
+      -o-transition: opacity 0.2s ease-out; }
+      /* line 35, /Users/brent/Projects/nancyleungcouture.com.au/source/css/dresses.css.sass */
+      .carousel .navigation a.dress-nav:hover {
+        transition: opacity 0.2s ease-out;
+        -moz-transition: opacity 0.2s ease-out;
+        -webkit-transition: opacity 0.2s ease-out;
+        -o-transition: opacity 0.2s ease-out; }
+    /* line 41, /Users/brent/Projects/nancyleungcouture.com.au/source/css/home.css.sass */
+    .carousel .navigation a.dress-nav {
+      opacity: 0.5; }
+      /* line 44, /Users/brent/Projects/nancyleungcouture.com.au/source/css/home.css.sass */
+      .carousel .navigation a.dress-nav:hover {
+        opacity: 1; }

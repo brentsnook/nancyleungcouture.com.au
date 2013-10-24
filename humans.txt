@@ -1,0 +1,19 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Nancy -- Couture-erer -- @Nancy_L_Couture
+    Paul -- Assistant to the Couture-erer
+    Gabriel -- Geek
+    Brent -- Geek -- @brentsnook
+
+# THANKS
+
+    ...
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Middleman
+    jQuery, Modernizr

@@ -1,0 +1,10 @@
+/* line 4, /Users/brent/Projects/nancyleungcouture.com.au/source/css/press.css.sass */
+.press.content .press-article h2.title {
+  font-size: 1.2em; }
+/* line 7, /Users/brent/Projects/nancyleungcouture.com.au/source/css/press.css.sass */
+.press.content .press-article .time {
+  font-style: italic; }
+/* line 10, /Users/brent/Projects/nancyleungcouture.com.au/source/css/press.css.sass */
+.press.content .press-article img {
+  margin: 30px auto;
+  display: block; }
