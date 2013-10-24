@@ -9,8 +9,12 @@ name: contact
   = image_tag 'About.jpg', :class => 'banner'
 
   .contact-form
-    .form
-      contact form goes here
+    %form{:action => 'mailto:info@nancyleungcouture.com.au', :target => '_blank'}
+      %input{:name => 'subject', :type => 'hidden', :value => 'Contact Enquiry'}
+      %label{:for => 'body'}
+        Your Message:
+      %textarea{:name => 'body', :rows => 10}
+      %input{:type => 'submit', :value => 'Send Email'}
 
   %address{:itemscope => 'a', :itemtype => 'http://schema.org/ProfessionalService'}
     %p

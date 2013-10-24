@@ -1,3 +1,8 @@
+@mixin rounded-corners($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  border-radius: $radius
+
 .contact.content
   .banner
     width: 960px
@@ -15,3 +20,26 @@
     width: 50%
     display: inline-block
     vertical-align: top
+
+    label
+      display: block
+      margin-bottom: 20px
+
+    textarea
+      display: block
+      width: 95%
+      border: 1px solid #D6D6D6
+      @include rounded-corners(2px)
+      margin-bottom: 20px
+
+    input[type="submit"]
+      @include rounded-corners(3px)
+      background-color: black
+      border-color: black
+      border-style: solid
+      color: white
+      font: 11px 'Open Sans'
+      padding: 15px
+
+      &:hover
+        opacity: 0.5
