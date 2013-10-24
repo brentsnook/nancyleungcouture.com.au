@@ -40,10 +40,12 @@ end
 page '/feed.xml', :layout => false
 
 require 'lib/navigation_helpers'
+require 'lib/metadata_helpers'
 require 'lib/dress_helpers'
 require 'lib/home_helpers'
 
 helpers NavigationHelpers
+helpers MetadataHelpers
 helpers DressHelpers
 helpers HomeHelpers
 
