@@ -5,6 +5,7 @@ source 'http://rubygems.org'
 gem "middleman", "~>3.1.6"
 gem "middleman-blog", "~> 3.3.0"
 gem "middleman-google-analytics"
+gem "middleman-gh-pages"
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
